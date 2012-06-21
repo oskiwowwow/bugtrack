@@ -1,0 +1,15 @@
+<h1>Call#<%= @call.id %></h1>
+
+<%= render 'call_table' %>
+      
+<%= link_to('Edit', edit_call_path) + " | " if Person.is_internal?(current_user) %><%= link_to 'Main', calls_url %>
+
+<h2>Add a comment</h2>
+<%= render "call_comments/form" %>
+
+<h2>Comments</h2>
+<% if Person.is_internal?(current_user) %>
+  <%= render @call.call_comments %>
+<% else %>
+  <%= render @call.call_comments.external %>
+<% end %>

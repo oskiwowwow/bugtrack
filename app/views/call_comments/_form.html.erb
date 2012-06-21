@@ -1,0 +1,9 @@
+<%= form_for([@call, @call.call_comments.build]) do |f| %>
+  <b>Comment:</b><br>
+  <%= f.text_area(:body, :size => "100x10") %><br>
+  <% if Person.is_internal?(current_user)%>
+    <b>Internal:</b>
+    <%= f.check_box(:internal)%><br>
+  <% end %>
+  <%= f.submit %>
+<% end %>

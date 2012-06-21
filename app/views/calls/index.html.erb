@@ -1,0 +1,44 @@
+<h1>Call List</h1>
+<table>
+  <tr>
+    <th>Call#</th>
+    <th>Date Entered</th>
+    <th>Last Updated</th>
+    <th>Client</th>
+    <th>Status</th>
+    <th>Assigned To</th>
+    <th>Area</th>
+    <th>Priority</th>
+    <th>Severity</th>
+  </tr>
+  <% @calls.each do |call| %>
+    <tr class="simple_attrs">
+      <td><%= link_to(call.id, call) %></td>
+      <td><%= call.date_entered.to_s(:mdy_slash) %></td>
+      <td><%= call.updated_at.to_s(:mdy_slash) %></td>
+      <td><%= call.client.name %></td>
+      <td><%= call.status.name %></td>
+      <td><%= call.assignee.get_full_name %></td>
+      <td><%= call.area.name %></td>
+      <td><%= call.priority.name %></td>
+      <td><%= call.severity.name %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="td_labels_index" colspan="2">Title:</td>
+      <td colspan="5"><%= call.title %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="td_labels_index" colspan="2">System:</td>
+      <td colspan="5"><%= call.system.name %></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td class="td_labels_index" colspan="2">Problem:</td>
+      <td colspan="5"><%= call.problem %></td>
+    </tr>
+  <% end %>
+</table>
+<br />
+<%= link_to 'Open a ticket', new_call_path %>

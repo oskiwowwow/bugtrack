@@ -1,0 +1,47 @@
+<div class="td_labels_call">
+  <p>Title: <%= @call.title %></p>
+  <p>Call Details:<br />
+  <table>
+    <tr>
+      <td>Client:</td>
+      <td><%= @call.client.name %></td>
+      <td>Status:</td>
+      <td><%= @call.status.name %></td>
+      <td>Priority:</td>
+      <td><%= @call.priority.name %></td>
+    </tr>
+    <tr>
+      <td>Contact:</td>
+      <td><%= @call.contact.get_full_name %></td>
+      <td>Assigned To:</td>
+      <td><%= @call.assignee.get_full_name %></td>
+      <td>Severity:</td>
+      <td><%= @call.severity.name %></td>
+    </tr>
+    <tr>
+      <td>Entered By:</td>
+      <td><%= @call.author.get_full_name %></td>
+      <td>Date Entered:</td>
+      <td><%= @call.date_entered.to_s(:mdy_slash) %></td>
+    </tr>
+  </table></p>
+  <p>Application Details:<br />
+  <table>
+    <tr>
+      <td>Area:</td>
+      <td><%= @call.area.name %></td>
+      <td>Release Found:</td>
+      <td><%= @call.release_found.name %></td>
+    </tr>
+    <tr>
+      <td>Environment:</td>
+      <td><%= @call.system.name %></td>
+      <td>Release Resolved:</td>
+      <td><%= @call.release_resolved.name %></td>
+    </tr>
+  </table></p>
+  <p>Problem Description:<br />
+  <%= @call.problem %></p>
+  <p>Resolution:<br />
+  <%= @call.resolution %></p>
+</div>

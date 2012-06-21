@@ -1,0 +1,192 @@
+--- 
+cursor_positions: 
+  - :path: Rakefile
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:31.559000 -05:00
+  - :path: app/models/call_comments.rb
+    :cursor_offset: 39
+    :timestamp: 2012-04-12 22:06:26.749000 -05:00
+  - :path: db/migrate/20120413030626_create_call_comments.rb
+    :cursor_offset: 146
+    :timestamp: 2012-04-12 22:06:26.749000 -05:00
+  - :path: app/models/calls.rb
+    :cursor_offset: 272
+    :timestamp: 2012-04-12 21:52:41.262000 -05:00
+  - :path: db/migrate/20120413011811_create_calls.rb
+    :cursor_offset: 622
+    :timestamp: 2012-04-12 22:05:01.242000 -05:00
+  - :path: config/database.yml
+    :cursor_offset: 406
+    :timestamp: 2012-04-12 19:33:53.806000 -05:00
+  - :path: db/migrate/20120413004433_create_members.rb
+    :cursor_offset: 160
+    :timestamp: 2012-04-12 22:31:18.274000 -05:00
+  - :path: app/helpers/call_helper.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 22:40:35.335000 -05:00
+  - :path: app/views/call/open.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 22:40:35.242000 -05:00
+  - :path: app/views/call/edit.html.erb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 22:40:35.246000 -05:00
+  - :path: app/controllers/call_controller.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 22:40:34.678000 -05:00
+  - :path: public/500.html
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:33.929000 -05:00
+  - :path: public/422.html
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:33.927000 -05:00
+  - :path: public/404.html
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:33.924000 -05:00
+  - :path: public/robots.txt
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:33.943000 -05:00
+  - :path: app/models/member.rb
+    :cursor_offset: 69
+    :timestamp: 2012-04-12 22:31:32.490000 -05:00
+  - :path: config/initializers/wrap_parameters.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:33.873000 -05:00
+  - :path: config/environments/development.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:32.079000 -05:00
+  - :path: config/initializers/backtrace_silencers.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:32.093000 -05:00
+  - :path: config/initializers/inflections.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:32.101000 -05:00
+  - :path: config/initializers/mime_types.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:32.105000 -05:00
+  - :path: config/initializers/secret_token.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:33.867000 -05:00
+  - :path: config/environment.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:32.069000 -05:00
+  - :path: config/boot.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-12 19:30:33.889000 -05:00
+  - :path: config/initializers/conversions.rb
+    :cursor_offset: 31
+    :timestamp: 2012-05-02 21:33:16.542000 -05:00
+  - :path: app/controllers/people_controller.rb
+    :cursor_offset: 84
+    :timestamp: 2012-05-02 23:37:15.262000 -05:00
+  - :path: app/helpers/calls_helper.rb
+    :cursor_offset: 0
+    :timestamp: 2012-04-22 20:42:09.730000 -05:00
+  - :path: config/initializers/date_formats.rb
+    :cursor_offset: 110
+    :timestamp: 2012-05-04 18:06:56.618000 -05:00
+  - :path: Gemfile
+    :cursor_offset: 163
+    :timestamp: 2012-06-06 21:26:39.767000 -05:00
+  - :path: db/migrate/20120425013352_create_enums.rb
+    :cursor_offset: 1916
+    :timestamp: 2012-05-03 13:29:10.967000 -05:00
+  - :path: db/migrate/20120413031232_create_calls.rb
+    :cursor_offset: 1186
+    :timestamp: 2012-05-04 16:56:52.495000 -05:00
+  - :path: db/migrate/20120413031419_create_call_comments.rb
+    :cursor_offset: 218
+    :timestamp: 2012-06-13 01:57:48.227000 -05:00
+  - :path: app/models/call_comment.rb
+    :cursor_offset: 151
+    :timestamp: 2012-06-18 20:43:19.708000 -05:00
+  - :path: app/models/call.rb
+    :cursor_offset: 913
+    :timestamp: 2012-05-08 20:02:15.798000 -05:00
+  - :path: db/migrate/20120607015446_create_users.rb
+    :cursor_offset: 435
+    :timestamp: 2012-06-18 22:42:07.236000 -05:00
+  - :path: config/application.rb
+    :cursor_offset: 2445
+    :timestamp: 2012-04-12 19:30:32.066000 -05:00
+  - :path: app/views/sessions/new.html.erb
+    :cursor_offset: 246
+    :timestamp: 2012-06-06 22:44:23.028000 -05:00
+  - :path: app/views/calls/edit.html.erb
+    :cursor_offset: 169
+    :timestamp: 2012-06-18 22:49:30.131000 -05:00
+  - :path: app/controllers/call_comments_controller.rb
+    :cursor_offset: 282
+    :timestamp: 2012-06-08 17:18:47.791000 -05:00
+  - :path: app/controllers/sessions_controller.rb
+    :cursor_offset: 344
+    :timestamp: 2012-06-18 23:01:50.035000 -05:00
+  - :path: config/routes.rb
+    :cursor_offset: 235
+    :timestamp: 2012-06-18 22:57:56.204000 -05:00
+  - :path: app/views/calls/new.html.erb
+    :cursor_offset: 75
+    :timestamp: 2012-06-08 17:27:12.519000 -05:00
+  - :path: app/models/enum.rb
+    :cursor_offset: 310
+    :timestamp: 2012-05-03 13:16:07.551000 -05:00
+  - :path: app/models/client.rb
+    :cursor_offset: 139
+    :timestamp: 2012-06-19 22:23:08.414000 -05:00
+  - :path: db/migrate/20120425010934_create_people.rb
+    :cursor_offset: 646
+    :timestamp: 2012-06-19 22:13:31.043000 -05:00
+  - :path: db/migrate/20120425010839_create_clients.rb
+    :cursor_offset: 632
+    :timestamp: 2012-06-19 22:26:57.141000 -05:00
+  - :path: app/views/call_comments/_call_comment.html.erb
+    :cursor_offset: 285
+    :timestamp: 2012-05-11 12:58:04.349000 -05:00
+  - :path: app/views/call_comments/_form.html.erb
+    :cursor_offset: 273
+    :timestamp: 2012-06-13 02:03:37.387000 -05:00
+  - :path: app/views/layouts/application.html.erb
+    :cursor_offset: 291
+    :timestamp: 2012-06-19 21:58:46.944000 -05:00
+  - :path: app/views/calls/show.html.erb
+    :cursor_offset: 393
+    :timestamp: 2012-06-18 22:38:48.003000 -05:00
+  - :path: app/views/calls/index.html.erb
+    :cursor_offset: 239
+    :timestamp: 2012-05-29 18:29:18.017000 -05:00
+  - :path: app/views/calls/_call_table.html.erb
+    :cursor_offset: 626
+    :timestamp: 2012-06-20 19:04:02.195000 -05:00
+  - :path: app/models/assignment.rb
+    :cursor_offset: 79
+    :timestamp: 2012-06-19 22:19:08.517000 -05:00
+  - :path: db/migrate/20120620031804_create_assignments.rb
+    :cursor_offset: 479
+    :timestamp: 2012-06-19 22:34:35.095000 -05:00
+  - :path: app/views/calls/_form.html.erb
+    :cursor_offset: 1585
+    :timestamp: 2012-06-20 23:13:18.683000 -05:00
+  - :path: app/controllers/application_controller.rb
+    :cursor_offset: 376
+    :timestamp: 2012-06-19 21:53:24.741000 -05:00
+  - :path: app/models/person.rb
+    :cursor_offset: 189
+    :timestamp: 2012-06-20 22:38:19.210000 -05:00
+  - :path: app/controllers/calls_controller.rb
+    :cursor_offset: 721
+    :timestamp: 2012-06-20 23:04:15.123000 -05:00
+  - :path: app/models/user.rb
+    :cursor_offset: 95
+    :timestamp: 2012-06-20 23:14:26.291000 -05:00
+  - :path: app/assets/stylesheets/sessions.css.scss
+    :cursor_offset: 179
+    :timestamp: 2012-06-06 21:26:56.817000 -05:00
+  - :path: app/assets/stylesheets/calls.css.scss
+    :cursor_offset: 341
+    :timestamp: 2012-05-29 18:38:57.517000 -05:00
+  - :path: app/assets/stylesheets/call_comments.css.scss
+    :cursor_offset: 184
+    :timestamp: 2012-05-04 17:15:44.629000 -05:00
+  - :path: app/assets/stylesheets/application.css
+    :cursor_offset: 621
+    :timestamp: 2012-05-10 20:54:58.732000 -05:00
+files_to_retain: 0

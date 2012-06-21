@@ -1,0 +1,8 @@
+<h1>Call#<%= @call.id %></h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Back', @call %> | <%= link_to 'Main', calls_url %>
+
+<h2>Comments</h2>
+<%= render @call.call_comments %>

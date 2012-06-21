@@ -1,0 +1,10 @@
+<% unless call_comment.new_record? %>
+  <p>
+    Posted <%= raw "<b><i>internally</i></b>" if call_comment.internal? %> by 
+    <%= call_comment.author.get_full_name %> at <%= call_comment.created_at.to_s(:time_w_zone12) %>
+    on <%= call_comment.created_at.to_s(:mdy_slash) %>.
+  </p>
+  <p>
+    <%= call_comment.body %>
+  </p>
+<% end %>

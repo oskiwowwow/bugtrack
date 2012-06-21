@@ -1,0 +1,13 @@
+// Place all the styles related to the Calls controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.td_labels_index, .td_labels_call td:nth-child(odd) {
+  text-align: right;
+  font-weight:bold;
+}
+.simple_attrs td {
+  text-align: center;
+}
+select {
+  width: 100%;
+}

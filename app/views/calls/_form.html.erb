@@ -1,0 +1,103 @@
+<div class="td_labels_call">
+  <%= form_for(@call) do |f| %>
+    <p>Title: <%= f.text_field :title %></p>
+    <p>Call Details:<br />
+    <table>
+      <tr>
+        <td>Client:</td>
+        <td>
+          <% if current_page?(new_call_path)%>
+            <% if Person.is_internal?(current_user)%>
+              <%= f.collection_select(:client_id, Client.all, :id, :name)%>
+            <% else %>
+              <%= current_user_client.name %>
+            <% end %>
+          <% else %>
+            <%= @call.client.name %>
+          <% end %>
+        </td>
+        <td>Status:</td>
+        <td>
+          <% if current_page?(new_call_path)%>
+            <%= Enum.statuses.find(1).name %>
+          <% else %>
+            <%= f.collection_select(:status_id, Enum.statuses, :id, :name)%>
+          <% end %>
+        </td>
+        <td>Priority:</td>
+        <td><%= f.collection_select(:priority_id, Enum.priorities, :id, :name) %></td>
+      </tr>
+      <tr>
+        <td>Contact:</td>
+        <td>
+          <% if current_page?(new_call_path)%>
+            <% unless Person.is_internal?(current_user)%>
+              <%= f.collection_select(:contact_id, Person.where(:client_id => current_user_client.id), :id, :get_full_name )%>
+            <% else %>
+              <% #todo: have available contacts entirely dependent on chosen client ACTIVELY %>
+              <%= f.collection_select(:contact_id, Person.all, :id, :get_full_name )%>
+            <% end %>
+          <% else %>
+            <%= @call.contact.get_full_name %>
+          <% end %>
+        </td>
+        <td>Assigned To:</td>
+        <td>
+          <% if Person.is_internal?(current_user)%>
+            <%= f.collection_select(:assignee_id, Person.get_internal, :id, :get_full_name )%>
+          <% else %>
+            <% if current_page?(new_call_path)%>
+              <%= Client.find(current_user_client).people.order("assignments.order").first.get_full_name %>
+            <% else %>
+              <%= @call.assignee.get_full_name %>
+            <% end %>
+          <% end %>
+        </td>
+        <td>Severity:</td>
+        <td><%= f.collection_select(:severity_id, Enum.severities, :id, :name)%></td>
+      </tr>
+      <tr>
+        <td>Entered By:</td>
+        <td>
+          <% if current_page?(new_call_path)%>
+            <%= Person.find(current_user.person_id).get_full_name %>
+          <% else %>
+            <%= @call.author.get_full_name %>
+          <% end %>
+        </td>
+        <td>Date Entered:</td>
+        <td>
+          <% if current_page?(new_call_path)%>
+            <%= Time.now().to_s(:mdy_slash) %>
+          <% else %>
+            <%= @call.date_entered.to_s(:mdy_slash)%>
+          <% end %>
+        </td>
+      </tr>
+    </table></p>
+    <p>Application Details:<br />
+    <table>
+      <tr>
+        <td>Area:</td>
+        <td><%= f.collection_select(:area_id, Enum.areas, :id, :name) %></td>
+        <td>Release Found:</td>
+        <td><%= f.collection_select(:release_found_id, Enum.releases, :id, :name) %></td>
+      </tr>
+      <tr>
+        <td>Environment:</td>
+        <td><%= f.collection_select(:system_id, Enum.systems, :id, :name) %></td>
+        <% unless current_page?(new_call_path)%>
+          <td>Release Resolved:</td>
+          <td><%= f.collection_select(:release_resolved_id, Enum.releases, :id, :name) %></td>
+        <% end %>
+      </tr>
+    </table></p>
+    <p>Problem Description:<br />
+    <%= f.text_area(:problem, :size => "100x10") %></p>    
+    <% unless current_page?(new_call_path)%>
+      <p>Resolution:<br />
+      <%= f.text_area(:resolution, :size => "100x10") %></p>
+    <% end %>
+    <p><%= f.submit %></p>
+  <% end %>
+</div>

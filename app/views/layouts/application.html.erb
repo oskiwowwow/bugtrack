@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bugtrack</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+<%= yield %>
+
+</body>
+<footer>
+  <p>
+    <% if current_user && !current_page?(root_url) %>
+      Logged in as <%= Person.find(current_user.person_id).get_full_name %>.
+      <%= link_to "Log out", log_out_path %>
+    <% end %>
+  </p>
+</footer>
+</html>
